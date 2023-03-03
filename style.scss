@@ -1,0 +1,89 @@
+// general style
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  // border: 1px solid red;
+}
+// menu style
+.header {
+  padding: 2rem;
+
+  #menu {
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 10px;
+    width: 100%;
+    background-color: #dc052d;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+}
+.nav-links {
+  transition: 0.3s ease;
+  display: none;
+  // margin: 1.5rem;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    li {
+      // display: inline;
+      font-size: xx-large;
+      color: rgba(187, 34, 34, 0.766);
+    }
+  }
+}
+
+.change {
+  display: block;
+
+  .bar {
+    background-color: red;
+  }
+
+  #bar1 {
+    transform: translateY(9px) rotateZ(-45deg);
+  }
+
+  #bar2 {
+    opacity: 0;
+  }
+
+  #bar3 {
+    transform: translateY(-9px) rotateZ(45deg);
+  }
+}
+
+// active classi ile deyisiklik etmek
+.active {
+  display: inline;
+}
+// click olunan bodynin rengi deyismek
+.changeBg{
+  background-color: aqua;
+}
+
+.bos{
+  font-size: xx-large;
+}
